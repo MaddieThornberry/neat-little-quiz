@@ -11,42 +11,53 @@ body{
 }
 
 .quiz-box{
-    height: 540px;
+    height: 400px;
     padding: 50px;
+    margin: 100px;
     background: gray;
     border-radius: 5px;
+    text-align: center;
 }
 
-/*.quiz-title{
-    height: 75px;
-    width: 10%;
-    display: flex;
+.quiz-title{
+    height: 400px;
+    width: 100%;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    /*display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 25px 35px;
-    font-size: 35px;
-}*/
+    font-size: 35px;*/
+}
 
-/*.quiz-title h1{
+h1{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 45px;
-    font-size: 25px;
-}*/
+    padding-top: 25px;
+    font-size: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
 
 .start-btn{
     position: absolute;
     top: 60%;
-    left: 50%;
-    transform: translate(-50% -50%)
-}
-
-.start-btn button {
-    font-size: ;
+    left: 45%;
+    transform: translate(-10% -50%)
     color: gray;
     padding: 10px 10px;
     border-radius: 5px;
-    background: rgb(208, 12, 172);
+    background: rgb(100, 22, 172);
 }
+
+/*.buttons {
+    font-size: ;
+    color: gray;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: rgb(208, 12, 172);
+}*/
