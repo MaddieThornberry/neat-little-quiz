@@ -25,7 +25,7 @@ body{
     font-size: 75px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    /*display: flex;
+    display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;

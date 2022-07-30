@@ -97,17 +97,11 @@ var answer2= document.getElementById
 var answer3= document.getElementById
     ('answer')
 
-var scoreboard= document.getElementById
-    (scoreboard)
-
-var next= document.querySelectorAll
-    ('next')
-
-var tally= document.getElementById
-    ('score')
-
+var scoreboard= document.getElementById(scoreboard)
+var next= document.querySelectorAll('next')
+var tally= document.getElementById('score')
+var span= document.querySelectorAll('span')
 var i=0;
-
 var score = 0;
 
 // Display question
@@ -125,4 +119,7 @@ function displayQuestion(){
     [2];
     answer3.innerHTML= quizContent[i].answer
     [3];
+    stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+quizContent.length;
 }
+
+displayQuestion();
