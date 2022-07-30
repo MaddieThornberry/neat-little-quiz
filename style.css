@@ -19,12 +19,12 @@ body{
     text-align: center;
 }
 
-.quiz-title{
+.span{
     height: 400px;
     width: 100%;
     font-size: 45px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
+    font-weight: bolder;
     /*display: flex;
     align-items: center;
     flex-direction: row;
@@ -38,11 +38,12 @@ h1{
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 25px;
-    font-size: 50%;
+    font-size: 75%;
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
 }
 
+/*Start Button Style*/
 .start-btn{
     position: absolute;
     top: 60%;
@@ -54,10 +55,3 @@ h1{
     background: rgb(100, 22, 172);
 }
 
-/*.buttons {
-    font-size: ;
-    color: gray;
-    padding: 10px 10px;
-    border-radius: 10px;
-    background: rgb(208, 12, 172);
-}*/
