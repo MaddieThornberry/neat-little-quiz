@@ -1,8 +1,8 @@
-// 1.
-// 2.
-// 3.
-// 4.
-// 5.
+// 1. Start
+// 2. Questions
+// 3. Timer
+// 4. Highscore
+// 5. Quiz reset
 
 // Coding Quiz Challenges
 // Try to answer the following code-related questions within the time limit. Keep in mind the incorrect answers will penalize your scoretime by ten seconds!
@@ -109,3 +109,20 @@ var tally= document.getElementById
 var i=0;
 
 var score = 0;
+
+// Display question
+function displayQuestion(){
+    for(var 1=0;1<span.length;a++){
+        span[a].style.background='none';
+    }
+    question.innerHTML= 'Q.'+(i+1)+''
+    +quizContent[i].question;
+    answer0.innerHTML= quizContent[i].answer
+    [0];
+    answer1.innerHTML= quizContent[i].answer
+    [1];
+    answer2.innerHTML= quizContent[i].answer
+    [2];
+    answer3.innerHTML= quizContent[i].answer
+    [3];
+}
