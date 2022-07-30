@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neat Little Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
 <div class="container"></div>
@@ -24,15 +24,20 @@
         <button class="start-btn">Start Quiz</button></div>
 <!--Questions-->
 <div class="questions">
-    <h2 id="questions">
-        <ol class="begin">
+    <h2 id="question">    </h2>
+        <ol type="1">
             <li class="answer0"></li>
             <li class="answer1"></li>
             <li class="answer2"></li>
             <li class="answer3"></li>
         </ol>
-    </h2>
 </div>
+</div>
+<!--Score-->
+<div id="scorekeeper">
+    <h2 id="scoreboard">Your Score</h2>
+    <h2 id="score"></h2>
+    <button type="button" id="Check Highscore">Check Highscore</button>
 </div>
 </body>
 </html>
