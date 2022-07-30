@@ -1,8 +1,11 @@
 // 1.
 // 2.
 // 3.
-//4.
-//5.
+// 4.
+// 5.
+
+// Coding Quiz Challenges
+// Try to answer the following code-related questions within the time limit. Keep in mind the incorrect answers will penalize your scoretime by ten seconds!
 
 // Commonly used data types DO NOT include:
 // 1. Strings
@@ -33,3 +36,10 @@
 // 2. Booleans
 // 3. for loops
 // 4. console.log
+
+// All done!
+// Your final score is .
+// Enter your initials: (Submit button)
+// Highscores
+// Dispay Highscores
+// Clear Highscores and Go Back buttons
