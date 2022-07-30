@@ -8,10 +8,10 @@
 // Try to answer the following code-related questions within the time limit. Keep in mind the incorrect answers will penalize your scoretime by ten seconds!
 
 // Commonly used data types DO NOT include:
-// 1. Strings
-// 2. Booleans
-// 3. Alerts
-// 4. Numbers
+// 1. strings
+// 2. booleans
+// 3. alerts
+// 4. numbers
 
 // The condition of an if/else statement is enclosed within _____:
 // 1. quotes
@@ -46,9 +46,35 @@
 
 // Quiz Content
 
-var quizContent {
-    question : '',
-    answer : ['','','',''],
+var quizContent= [
+{
+    question : 'Commonly used data types DO NOT include:',
+    answer : ['strings','booleans','alerts','numbers'],
+    truth : 'alerts'
+
+},
+{
+    question : 'The condition of an if/else statement is enclosed within _____:',
+    answer : ['quotes','curly brackets','parenthesis','square brackets'],
+    truth : 'curly brackets'
+
+},
+{
+    question : 'Arrays in JavaScript can be used to store _____:',
+    answer : ['numbers and strings','other arrays','booleans','all of the above'],
+    truth : 'all of the above'
+
+},
+{
+    question : 'String values must be enclosed within _____ when being assigned to variables.',
+    answer : ['commas','curly brackets','quotes','parenthesis'],
     truth : ''
 
+},
+{
+    question : 'A very useful tool used during developement and debugging for printing content to the debugger is',
+    answer : ['JavaScript','Booleans','for loops','console.log'],
+    truth : 'console.log'
+
 }
+]
