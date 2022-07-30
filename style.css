@@ -7,26 +7,40 @@
 
 body{
     background: white;
-    font-size: 10%;
+    font-size: 100%;
 }
 
 .quiz-box{
-    width: 200px;
-    background: purple;
+    height: 540px;
+    padding: 50px;
+    background: gray;
     border-radius: 5px;
 }
 
-.quiz-box .quiz-title{
-    height: 100px;
-    width: 100%;
+/*.quiz-title{
+    height: 75px;
+    width: 10%;
     display: flex;
     align-items: center;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px 35px;
+    font-size: 35px;
+}*/
+
+/*.quiz-title h1{
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 45px;
+    font-size: 25px;
+}*/
 
 .start-btn{
     position: absolute;
-    top: 50%;
-    left: 50%
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% -50%)
 }
 
 .start-btn button {
@@ -34,5 +48,5 @@ body{
     color: gray;
     padding: 10px 10px;
     border-radius: 5px;
-    background: black;
+    background: rgb(208, 12, 172);
 }
