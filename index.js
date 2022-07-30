@@ -43,3 +43,12 @@
 // Highscores
 // Dispay Highscores
 // Clear Highscores and Go Back buttons
+
+// Quiz Content
+
+var quizContent {
+    question : '',
+    answer : ['','','',''],
+    truth : ''
+
+}
