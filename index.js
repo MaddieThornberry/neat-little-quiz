@@ -78,3 +78,34 @@ var quizContent= [
 
 }
 ]
+
+var quiz-box= document.getElementById
+    ('quiz-box');
+
+var question= document.getElementById
+    ('question')
+
+var answer0= document.getElementById
+    ('answer')
+
+var answer1= document.getElementById
+    ('answer')
+
+var answer2= document.getElementById
+    ('answer')
+
+var answer3= document.getElementById
+    ('answer')
+
+var scoreboard= document.getElementById
+    (scoreboard)
+
+var next= document.querySelectorAll
+    ('next')
+
+var tally= document.getElementById
+    ('score')
+
+var i=0;
+
+var score = 0;
