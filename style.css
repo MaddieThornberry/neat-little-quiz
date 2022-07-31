@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -55,6 +56,7 @@ h1{
 }
 
 /*Start Button Style*/
+
 .start-btn{
     position: absolute;
     top: 60%;
@@ -66,4 +68,24 @@ h1{
     background: rgb(100, 22, 172);
 }
 
+p {
+    height: 25px;
+    padding: 30px;
+    margin: 10px;
+    background: gray;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: flex-end; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: end; 
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+
+ h2 {
+    display: flex;
+    flex-direction: wrap;
+}
 

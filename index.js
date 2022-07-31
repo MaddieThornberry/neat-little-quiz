@@ -45,7 +45,7 @@
 // Clear Highscores and Go Back buttons
 
 // Quiz Content
-
+/*
 var quizContent= [
 {
     question : '. Commonly used data types DO NOT include:',
@@ -131,6 +131,7 @@ start.addEventListener("click", startQuiz);
 */
 //display score
 // Display next question
+/*
 function nextQuestion() {
 if (i < quizContent.length - 1) {
             i = i + 1;
@@ -148,7 +149,8 @@ if (i < quizContent.length - 1) {
             console.log('Next Question!')
         });
 */
-
+/*
         // click event for return button
         function returnQuiz() {
             location.reload();}
+*/
