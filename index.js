@@ -46,7 +46,7 @@
 
 // Quiz Content
 
-/*var quizContent= [
+var quizContent= [
 {
     question : '. Commonly used data types DO NOT include:',
     answer : ['strings','booleans','alerts','numbers'],
@@ -93,7 +93,7 @@ var next = document.querySelectorAll('next')
 var tally = document.getElementById('score')
 var span = document.querySelectorAll('span')
 var i=0;
-var score = 0;*/
+var score = 0;
 
 //timer
 const startingMinutes = 5.00;
@@ -108,12 +108,12 @@ function updateCountdown() {
     const minutes = Math.floor(time / 60);
     let seconds = time % 60;
 
-    countdownEl.innerHTML = `${minutes}: ${seconds}`;
+    countdownEl.innerHTML = `${minutes}:${seconds}`;
     time--; 
 }
-//
+
 // Display question
-/*
+
 function startQuiz() {
     for (var i = 0; i < span.length; i++) {
     span[i].style.background = 'none';
@@ -125,26 +125,30 @@ function startQuiz() {
     answer3.innerHTML = quizContent[i].answer[3];
     any.innerHTML = "Question" + '' + (i + 1) + '' + quizContent.length;
 }
-
+}
+/*
 start.addEventListener("click", startQuiz);
-
+*/
 //display score
 // Display next question
+function nextQuestion() {
 if (i < quizContent.length - 1) {
             i = i + 1;
-            displayQuestion();
+            nextQuestion();
         }
         else {
             score.innerHTML = score + '/' +
                 quizContent.length;
             quizBox.style.display = 'block';
         }
-
+    }
+/*
         //click events for next button
-        next.addEventListener(click, nextQuestion);
+        document.getElementById('next').addEventListener('click', () =>{
+            console.log('Next Question!')
+        });
+*/
 
         // click event for return button
         function returnQuiz() {
-            location.reload();
-}
-*/
+            location.reload();}
