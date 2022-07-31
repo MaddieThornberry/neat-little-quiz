@@ -11,16 +11,26 @@ body{
     font-size: 100%;
 }
 
-p {
-    background-color: white;
+#countdown {
     display: inline-flex;
-    align-items: end;
-    justify-content: end;
-    font-size: 30px;
+    justify-content: center;
+    font-size: 15px;
     height: 50px;
     width: 100px;
+    padding: 30px;
+    margin: 20px;
+    background: gray;
+    border-radius: 5px;
+    align-items: end; 
+    text-align: initial;
+    flex-direction: row; 
+    border-radius: 5px;
+    background-color: blueviolet;
 } 
-
+#countdown {
+    text-align: center;
+    padding: 30px;
+}
 
 .quiz-box{
     height: 400px;
@@ -45,7 +55,7 @@ p {
     font-size: 35px;
 }
 
-h1{
+h1 {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,42 +65,66 @@ h1{
     font-weight: normal;
 }
 
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    height: 40px;
+    width: 75px;
+    padding: 5%;
+    margin: 20px;
+    background: gray;
+    border-radius: 5px;
+    align-items: end; 
+    text-align: center; 
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+
+
 /*Start Button Style*/
 
-.start-btn {
+#start-btn {
     position: absolute;
     padding: 10px 10px;
-    top: 75%;
+    top: 65%;
     left: 45%;
     transform: translate(-50% -50%);
     border-radius: 5px;
     background: rgb(100, 22, 172);
 }
-
+/*
 .hide {
     display: none;
+}*/
+
+#next-btn {
+    position: absolute;
+    padding: 10px 10px;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50% -50%);
+    border-radius: 5px;
+    background: rgb(100, 22, 172);
 }
+
+#restart-btn {
+    position: absolute;
+    padding: 10px 10px;
+    top: 65%;
+    left: 65%;
+    transform: translate(-50% -50%);
+    border-radius: 5px;
+    background: rgb(100, 22, 172);
+}
+
 
 #code-quiz-title {
     font-size: 25px;
     font-weight: 700;
 }
 
-p {
-    height: 25px;
-    padding: 30px;
-    margin: 10px;
-    background: gray;
-    border-radius: 5px;
-    padding: 5px;
-    align-items: flex-end; 
-    display: flex;
-    flex-direction: row; 
-    justify-content: end; 
-    font-size: 15px;
-    border-radius: 5px;
-    background-color: blueviolet;
-}
+
 
  h2 {
     display: flex;

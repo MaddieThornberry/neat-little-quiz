@@ -179,13 +179,13 @@ startButton.addEventListener('click', startGame)
 
 function startGame() {
     console.log('game started')
-    /*startButton.classList.add('hide')*/
+    startButton.classList.add('hide')
     setNextQuestion()
 }
 
 function setNextQuestion() {
     console.log('next question')
-    setNextQuestion
+    setNextQuestion()
 }
 
 function selectAnswer(){
