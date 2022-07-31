@@ -95,24 +95,23 @@ var i=0;
 var score = 0;
 
 // Display question
-start.addEventListener("click"), function startQuiz() {
-            for (var i = 0; i < span.length; i++) {
-                span[i].style.background = 'none';
-            }
-            question.innerHTML = '' + (i + 1) + ''
-                + quizContent[i].question;
-            answer0.innerHTML = quizContent[i].answer[0];
-            answer1.innerHTML = quizContent[i].answer[1];
-            answer2.innerHTML = quizContent[i].answer[2];
-            answer3.innerHTML = quizContent[i].answer[3];
-            any.innerHTML = "Question" + '' + (i + 1) + '' + quizContent.length;
+start.addEventListener("click", startQuiz)
+
+function startQuiz() {
+    for (var i = 0; i < span.length; i++) {
+    span[i].style.background = 'none';
+    }
+    {question.innerHTML = '' + (i + 1) + ''+ quizContent[i].question;
+    answer0.innerHTML = quizContent[i].answer[0];
+    answer1.innerHTML = quizContent[i].answer[1];
+    answer2.innerHTML = quizContent[i].answer[2];
+    answer3.innerHTML = quizContent[i].answer[3];
+    any.innerHTML = "Question" + '' + (i + 1) + '' + quizContent.length;
 }
 
-
-
-        //display score
-        // Display next question
-        if (i < quizContent.length - 1) {
+//display score
+// Display next question
+if (i < quizContent.length - 1) {
             i = i + 1;
             displayQuestion();
         }
@@ -128,6 +127,4 @@ start.addEventListener("click"), function startQuiz() {
         // click event for return button
         function returnQuiz() {
             location.reload();
-        }
-
-        displayQuestion();
+}
