@@ -48,31 +48,31 @@
 
 var quizContent= [
 {
-    question : 'Commonly used data types DO NOT include:',
+    question : '. Commonly used data types DO NOT include:',
     answer : ['strings','booleans','alerts','numbers'],
     truth : 'alerts'
 
 },
 {
-    question : 'The condition of an if/else statement is enclosed within _____:',
+    question : '. The condition of an if/else statement is enclosed within _____:',
     answer : ['quotes','curly brackets','parenthesis','square brackets'],
     truth : 'curly brackets'
 
 },
 {
-    question : 'Arrays in JavaScript can be used to store _____:',
+    question : '. Arrays in JavaScript can be used to store _____:',
     answer : ['numbers and strings','other arrays','booleans','all of the above'],
     truth : 'all of the above'
 
 },
 {
-    question : 'String values must be enclosed within _____ when being assigned to variables.',
+    question : '. String values must be enclosed within _____ when being assigned to variables.',
     answer : ['commas','curly brackets','quotes','parenthesis'],
     truth : 'quotes'
 
 },
 {
-    question : 'A very useful tool used during developement and debugging for printing content to the debugger is',
+    question : '. A very useful tool used during developement and debugging for printing content to the debugger is',
     answer : ['JavaScript','Booleans','for loops','console.log'],
     truth : 'console.log'
 
@@ -81,13 +81,13 @@ var quizContent= [
 
 var quizBox= document.getElementById('quiz-box');
 var question= document.getElementById('question')
-var answer0= document.getElementById('answer')
-var answer1= document.getElementById('answer')
-var answer2= document.getElementById('answer')
-var answer3= document.getElementById('answer')
+var answer0= document.getElementById('answer0')
+var answer1= document.getElementById('answer1')
+var answer2= document.getElementById('answer2')
+var answer3= document.getElementById('answer3')
 
 var scoreboard= document.getElementById('scoreboard')
-var start= document.querySelectorAll('start')
+const start= document.getElementById('start')
 var next= document.querySelectorAll('next')
 var tally= document.getElementById('score')
 var span= document.querySelectorAll('span')
@@ -95,48 +95,39 @@ var i=0;
 var score = 0;
 
 // Display question
-function startQuiz(){
-    for (var i=0; i<span.length; i++) {
-        span[i].style.background='none';
-    }
-    question.innerHTML= 'Q.'+(i+1)+''
-    +quizContent[i].question;
-    answer0.innerHTML= quizContent[i].answer
-    [0];
-    answer1.innerHTML= quizContent[i].answer
-    [1];
-    answer2.innerHTML= quizContent[i].answer
-    [2];
-    answer3.innerHTML= quizContent[i].answer
-    [3];
-    statusbar.innerHTML= "Question"+''+(i+1)+''+quizContent.length;
+start.addEventListener("click"), function startQuiz() {
+            for (var i = 0; i < span.length; i++) {
+                span[i].style.background = 'none';
+            }
+            question.innerHTML = '' + (i + 1) + ''
+                + quizContent[i].question;
+            answer0.innerHTML = quizContent[i].answer[0];
+            answer1.innerHTML = quizContent[i].answer[1];
+            answer2.innerHTML = quizContent[i].answer[2];
+            answer3.innerHTML = quizContent[i].answer[3];
+            any.innerHTML = "Question" + '' + (i + 1) + '' + quizContent.length;
 }
 
-start.addEventListener('click', startQuiz() ,{
-    function: startQuiz(),
-});
 
-//display score
 
-// Display next question
-function nextQuestion(){
-    if(i<quizContent.length-1)
-    {
-        i=i+1;
+        //display score
+        // Display next question
+        if (i < quizContent.length - 1) {
+            i = i + 1;
+            displayQuestion();
+        }
+        else {
+            score.innerHTML = score + '/' +
+                quizContent.length;
+            quizBox.style.display = 'block';
+        }
+
+        //click events for next button
+        next.addEventListener(click, nextQuestion);
+
+        // click event for return button
+        function returnQuiz() {
+            location.reload();
+        }
+
         displayQuestion();
-    }
-    else{
-        score.innerHTML= score+ '/'+
-        quizContent.length;
-        quizBox.style.display= 'block'
-    }
-}
-//click events for next button
-next.addEventListener(click, nextQuestion);
-
-// click event for return button
-function returnQuiz(){
-    location.reload();
-}
-
-displayQuestion();
