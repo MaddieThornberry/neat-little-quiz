@@ -79,23 +79,22 @@ var quizContent= [
 }
 ]
 
-var quizBox= document.getElementById('quiz-box');
-var question= document.getElementById('question')
-var answer0= document.getElementById('answer0')
-var answer1= document.getElementById('answer1')
-var answer2= document.getElementById('answer2')
-var answer3= document.getElementById('answer3')
+var quizBox = document.getElementById('quiz-box');
+var question = document.getElementById('question')
+var answer0 = document.getElementById('answer0')
+var answer1 = document.getElementById('answer1')
+var answer2 = document.getElementById('answer2')
+var answer3 = document.getElementById('answer3')
 
-var scoreboard= document.getElementById('scoreboard')
-const start= document.getElementById('start')
-var next= document.querySelectorAll('next')
-var tally= document.getElementById('score')
-var span= document.querySelectorAll('span')
+var scoreboard = document.getElementById('scoreboard')
+const start = document.getElementById('#start')
+var next = document.querySelectorAll('next')
+var tally = document.getElementById('score')
+var span = document.querySelectorAll('span')
 var i=0;
 var score = 0;
 
 // Display question
-start.addEventListener("click", startQuiz)
 
 function startQuiz() {
     for (var i = 0; i < span.length; i++) {
@@ -108,6 +107,8 @@ function startQuiz() {
     answer3.innerHTML = quizContent[i].answer[3];
     any.innerHTML = "Question" + '' + (i + 1) + '' + quizContent.length;
 }
+
+start.addEventListener("click", startQuiz);
 
 //display score
 // Display next question
@@ -128,3 +129,4 @@ if (i < quizContent.length - 1) {
         function returnQuiz() {
             location.reload();
 }
+
