@@ -60,11 +60,15 @@ h1{
 .start-btn {
     position: absolute;
     padding: 10px 10px;
-    top: 65%;
+    top: 75%;
     left: 45%;
     transform: translate(-50% -50%);
     border-radius: 5px;
     background: rgb(100, 22, 172);
+}
+
+.hide {
+    display: none;
 }
 
 #code-quiz-title {

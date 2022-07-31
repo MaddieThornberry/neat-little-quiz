@@ -46,7 +46,7 @@
 
 // Quiz Content
 
-var quizContent= [
+/*var quizContent= [
 {
     question : '. Commonly used data types DO NOT include:',
     answer : ['strings','booleans','alerts','numbers'],
@@ -111,8 +111,9 @@ function updateCountdown() {
     countdownEl.innerHTML = `${minutes}:${seconds}`;
     time--; 
 }
-
+*/
 // Display question
+/*
 start.addEventListener("click", function startQuiz() {
     for (var i = 0; i < span.length; i++) {
     span[i].style.background = 'none';
@@ -125,9 +126,10 @@ start.addEventListener("click", function startQuiz() {
     any.innerHTML = "question" + '' + (i + 1) + '' + quizContent.length;
 });
 }
-
+*/
 //display score
 // Display next question
+/*
 function nextQuestion() {
 if (i < quizContent.length - 1) {
             i = i + 1;
@@ -149,3 +151,93 @@ document.getElementById('next').addEventListener('click', () =>{
 function returnQuiz() {
     location.reload();
 })
+*/
+
+const startButton = document.getElementById('start-btn')
+const quizBox = document.getElementById('quiz-box')
+const nextButton = document.getElementById('next-btn')
+const restartButton = document.getElementById('restart-btn')
+
+//timer
+const startingMinutes = 5.00;
+
+let time = startingMinutes*60;
+
+const countdownEl = document.getElementById('countdown')
+
+setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    countdownEl.innerHTML = `${minutes}:${seconds}`;
+    time--; 
+}
+
+startButton.addEventListener('click', startGame)
+
+function startGame() {
+    console.log('game started')
+    /*startButton.classList.add('hide')*/
+    setNextQuestion()
+}
+
+function setNextQuestion() {
+    console.log('next question')
+    setNextQuestion
+}
+
+function selectAnswer(){
+
+}
+
+const quizContent = {
+    question0 : '. Commonly used data types DO NOT include:',
+    answer : [
+        {text: 'strings', correct: false },
+        {text: 'booleans', correct: false },
+        {text: 'alerts', correct: true },
+        {text: 'numbers', correct: false }
+    ],
+
+    question1 : '. The condition of an if/else statement is enclosed within _____:',
+    answer : [
+        {text: 'quotes', correct: false },
+        {text: 'curly brackets', correct: true },
+        {text: 'parenthesis', correct: false },
+        {text: 'square brackets', correct: false }
+    ],
+
+    question2 : '. Arrays in JavaScript can be used to store _____:',
+    answer : [
+        {text: 'commas', correct: false },
+        {text: 'quotes', correct: false },
+        {text: 'curly brackets', correct: true },
+        {text: 'parenthesis', correct: false }
+    ],
+
+    question3 : '. String values must be enclosed within _____ when being assigned to variables.',
+    answer : [
+        {text: 'numbers and strings', correct: false },
+        {text: 'other arrays', correct: false },
+        {text: 'booleans', correct: false },
+        {text: 'all of the above', correct: true }
+    ],
+
+    question4 : 'A very useful tool used during developement and debugging for printing content to the debugger is ',
+    answer : [
+        {text: 'JavaScript', correct: false},
+        {text: 'Booleans', correct: false},
+        {text: 'for loops', correct: false},
+        {text: 'console.log', correct: true}
+    ]
+}
+
+// click event for return button
+restartButton.addEventListener('click', returnQuiz)
+
+function returnQuiz() {
+     console.log('game reset')
+        window.location.reload()
+}
