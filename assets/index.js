@@ -45,7 +45,7 @@
 // Clear Highscores and Go Back buttons
 
 // Quiz Content
-/*
+
 var quizContent= [
 {
     question : '. Commonly used data types DO NOT include:',
@@ -113,8 +113,7 @@ function updateCountdown() {
 }
 
 // Display question
-
-function startQuiz() {
+start.addEventListener("click", function startQuiz() {
     for (var i = 0; i < span.length; i++) {
     span[i].style.background = 'none';
     }
@@ -123,15 +122,12 @@ function startQuiz() {
     answer1.innerHTML = quizContent[i].answer[1];
     answer2.innerHTML = quizContent[i].answer[2];
     answer3.innerHTML = quizContent[i].answer[3];
-    any.innerHTML = "Question" + '' + (i + 1) + '' + quizContent.length;
+    any.innerHTML = "question" + '' + (i + 1) + '' + quizContent.length;
 }
 }
-/*
-start.addEventListener("click", startQuiz);
-*/
+
 //display score
 // Display next question
-/*
 function nextQuestion() {
 if (i < quizContent.length - 1) {
             i = i + 1;
@@ -142,15 +138,14 @@ if (i < quizContent.length - 1) {
                 quizContent.length;
             quizBox.style.display = 'block';
         }
-    }
-/*
-        //click events for next button
-        document.getElementById('next').addEventListener('click', () =>{
-            console.log('Next Question!')
-        });
-*/
-/*
-        // click event for return button
-        function returnQuiz() {
-            location.reload();}
-*/
+}
+
+//click events for next button
+document.getElementById('next').addEventListener('click', () =>{
+    console.log('Next Question!')
+})
+
+// click event for return button
+function returnQuiz() {
+    location.reload();
+})
