@@ -79,23 +79,12 @@ var quizContent= [
 }
 ]
 
-var quiz-box= document.getElementById
-    ('quiz-box');
-
-var question= document.getElementById
-    ('question')
-
-var answer0= document.getElementById
-    ('answer')
-
-var answer1= document.getElementById
-    ('answer')
-
-var answer2= document.getElementById
-    ('answer')
-
-var answer3= document.getElementById
-    ('answer')
+var quizBox= document.getElementById('quiz-box');
+var question= document.getElementById('question')
+var answer0= document.getElementById('answer')
+var answer1= document.getElementById('answer')
+var answer2= document.getElementById('answer')
+var answer3= document.getElementById('answer')
 
 var scoreboard= document.getElementById(scoreboard)
 var next= document.querySelectorAll('next')
@@ -106,7 +95,7 @@ var score = 0;
 
 // Display question
 function displayQuestion(){
-    for(var 1=0;1<span.length;a++){
+    for(var i=0;i<span.length;a++){
         span[a].style.background='none';
     }
     question.innerHTML= 'Q.'+(i+1)+''
@@ -119,7 +108,23 @@ function displayQuestion(){
     [2];
     answer3.innerHTML= quizContent[i].answer
     [3];
-    stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+quizContent.length;
 }
 
+//display score
+
+// Display next question
+function nextQuestion(){
+    if(i<quizContent.length-1)
+    {
+        i=i+1;
+        displayQuestion();
+    }
+    else{
+        score.innerHTML= score+ '/'+
+        quizContent.length;
+        quizBox.style.display= 'block'
+    }
+}
+//click events for next button
+next.addEventListener(click, nextQuestion);
 displayQuestion();
