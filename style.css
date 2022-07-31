@@ -57,15 +57,19 @@ h1{
 
 /*Start Button Style*/
 
-.start-btn{
+.start-btn {
     position: absolute;
-    top: 60%;
-    left: 45%;
-    transform: translate(-10% -50%)
-    color: gray;
     padding: 10px 10px;
+    top: 65%;
+    left: 45%;
+    transform: translate(-50% -50%);
     border-radius: 5px;
     background: rgb(100, 22, 172);
+}
+
+#code-quiz-title {
+    font-size: 25px;
+    font-weight: 700;
 }
 
 p {
