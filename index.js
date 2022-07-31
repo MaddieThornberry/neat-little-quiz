@@ -123,7 +123,7 @@ start.addEventListener("click", function startQuiz() {
     answer2.innerHTML = quizContent[i].answer[2];
     answer3.innerHTML = quizContent[i].answer[3];
     any.innerHTML = "question" + '' + (i + 1) + '' + quizContent.length;
-}
+});
 }
 
 //display score
