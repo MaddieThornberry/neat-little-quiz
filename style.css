@@ -8,9 +8,20 @@
 body{
     background: white;
     font-size: 100%;
-}
+}*/
 
-.quiz-box{
+p {
+    background-color: white;
+    display: inline-flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 30px;
+    height: 50px;
+    width: 100px;
+} 
+
+
+/*.quiz-box{
     height: 400px;
     padding: 50px;
     margin: 100px;
