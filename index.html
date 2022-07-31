@@ -10,8 +10,6 @@
 <body>
 <div class="container"></div>
 <div class="flex-center flex-column"></div>
-<!--Start button-->
-<!--<div class="start-btn"><button>Play!</button></div>
 <!--Quiz box-->
 <div class="quiz-box">
     <div class="quiz-title">
@@ -20,8 +18,9 @@
         </h1>
         </div>
     </div>
+    <!--Start button-->
     <div class="buttons">
-        <button class="start-btn">Start Quiz</button></div>
+        <button id="start-button" class="start-btn" onclick="startQuiz">Start Quiz</button></div>
 <!--Questions-->
 <div class="questions">
     <h2 id="question">    </h2>
@@ -32,9 +31,9 @@
             <li class="answer"><span id="answer3"></span></li>
         </ol>
 </div>
-<div class="button">
-    <button type="button" class="next">Next</button>
-    <button type="button" class="return">Return to quiz</button>
+<div class="buttons">
+    <button type="button" class="next" onclick="nextQuestion">Next</button>
+    <button type="button" class="return" onclick="returnQuiz">Return to quiz</button>
 </div>
 <!--Score-->
 <div id="scorekeeper">

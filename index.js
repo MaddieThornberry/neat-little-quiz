@@ -68,7 +68,7 @@ var quizContent= [
 {
     question : 'String values must be enclosed within _____ when being assigned to variables.',
     answer : ['commas','curly brackets','quotes','parenthesis'],
-    truth : ''
+    truth : 'quotes'
 
 },
 {
@@ -86,7 +86,8 @@ var answer1= document.getElementById('answer')
 var answer2= document.getElementById('answer')
 var answer3= document.getElementById('answer')
 
-var scoreboard= document.getElementById(scoreboard)
+var scoreboard= document.getElementById('scoreboard')
+var start= document.querySelectorAll('start')
 var next= document.querySelectorAll('next')
 var tally= document.getElementById('score')
 var span= document.querySelectorAll('span')
@@ -94,9 +95,9 @@ var i=0;
 var score = 0;
 
 // Display question
-function displayQuestion(){
-    for(var i=0;i<span.length;a++){
-        span[a].style.background='none';
+function startQuiz(){
+    for (var i=0; i<span.length; i++) {
+        span[i].style.background='none';
     }
     question.innerHTML= 'Q.'+(i+1)+''
     +quizContent[i].question;
@@ -108,7 +109,12 @@ function displayQuestion(){
     [2];
     answer3.innerHTML= quizContent[i].answer
     [3];
+    statusbar.innerHTML= "Question"+''+(i+1)+''+quizContent.length;
 }
+
+start.addEventListener('click', startQuiz() ,{
+    function: startQuiz(),
+});
 
 //display score
 
@@ -127,4 +133,10 @@ function nextQuestion(){
 }
 //click events for next button
 next.addEventListener(click, nextQuestion);
+
+// click event for return button
+function returnQuiz(){
+    location.reload();
+}
+
 displayQuestion();
