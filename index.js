@@ -157,7 +157,7 @@ const startButton = document.getElementById('start-btn')
 const quizBox = document.getElementById('quiz-box')
 const nextButton = document.getElementById('next-btn')
 const restartButton = document.getElementById('restart-btn')
-
+var question = document.querySelectorAll('question')
 //timer
 const startingMinutes = 5.00;
 
@@ -183,9 +183,17 @@ function startGame() {
     setNextQuestion()
 }
 
+var indexQuestion = 0;
+
+nextButton.addEventListener('click', setNextQuestion)
+
 function setNextQuestion() {
     console.log('next question')
-    setNextQuestion()
+    if(indexQuestion<question.length-1)
+    {
+        indexQuestion++;
+        loadQuestion(indexQuestion);
+    }
 }
 
 function selectAnswer(){
