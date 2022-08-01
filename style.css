@@ -92,6 +92,7 @@ h1 {
     transform: translate(-50% -50%);
     border-radius: 5px;
     background: rgb(100, 22, 172);
+    font-weight: 400;
 }
 /*
 .hide {
