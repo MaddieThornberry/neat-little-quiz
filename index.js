@@ -196,6 +196,19 @@ function setNextQuestion() {
     }
 }
 
+nextButton.addEventListener('click', clickHandler, false)
+
+var clickHandler = (function (e) {
+    var count = 0;
+    return function () {
+        count += 1;
+        if (count > 5) {
+            return;
+        } 
+    }
+}());
+
+
 function selectAnswer(){
 
 }
